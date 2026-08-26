@@ -66,22 +66,40 @@ Key figures are in [`results/figures/`](results/figures/).
 
 ```text
 insurance-fraud-detection/
-├── notebooks/
+│
+├── README.md
+├── requirements.txt
+├── .gitignore                 # ignores data, models, AND prompts/
+│
+├── notebooks/                 # run order
 │   ├── 01_eda_and_statistics.ipynb
 │   ├── 02_preprocessing_and_splitting.ipynb
 │   ├── 03_baseline.ipynb
-│   ├── 04_modelling_selection_and_test.ipynb   # Experiment + Optuna → select → locked test set
-│   ├── 05_calibration_and_thresholds.ipynb
-│   ├── 06_risk_tiers.ipynb
+│   ├── 04_modelling_and_selection.ipynb        # Experiment + Optuna → select on VALIDATION (no test set here)
+│   ├── 05_calibration_and_thresholds.ipynb     # calibrate + tune threshold/tiers on VALIDATION
+│   ├── 06_final_test_evaluation.ipynb          # LOCKED TEST SET — run once, after model+calibration+thresholds frozen
 │   ├── 07_shap_and_qwen.ipynb
 │   └── 08_rubric_evaluation.ipynb              # scores GenAI briefs
-├── genai.py            # prompt + Qwen call + safety rubric (shared)
-├── pipeline.py         # end-to-end runner: claim → model → calibrate → tier → SHAP → Qwen → brief
-├── app/                # Gradio demo 
-├── data/README.md      # dataset source + license
-├── results/            # small final outputs (metrics, comparison, key figures)
-├── requirements.txt
+│
+├── genai.py                   # loads prompt from git-ignored file; Qwen call + safety rubric
+├── pipeline.py                # end-to-end runner
+│
+├── app/                       # Gradio demo 
+│   └── app.py
+│
+├── prompts/                   # GIT-IGNORED — prompt text lives here, never committed
+│   └── brief_prompt.txt
+│
+├── data/
+│   └── README.md              # dataset source + CC0 license
+│
+├── results/                   # small final outputs committed for graders
+│   ├── metrics.json
+│   ├── model_comparison.csv
+│   └── figures/
+│
 └── report/
+    └── final_report.docx
 ```
 
 ---
