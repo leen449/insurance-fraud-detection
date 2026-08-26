@@ -1,0 +1,29 @@
+# Core data handling
+pandas>=2.2,<2.3
+numpy>=1.26,<2.0
+scipy>=1.11
+
+# Modelling
+scikit-learn>=1.4,<1.6
+xgboost>=2.0,<3.0
+lightgbm>=4.3,<5.0
+imbalanced-learn>=0.12,<0.14
+
+# Optimization & explainability
+optuna>=3.6,<4.0
+shap>=0.45
+
+# Visualization
+matplotlib>=3.8
+seaborn>=0.13
+
+# GenAI (Qwen2.5) — adjust to how you actually run the model
+transformers>=4.44
+torch>=2.2
+accelerate>=0.33
+
+# Notebook environment
+jupyter>=1.0
+
+#Gradio demo
+gradio>=4.0
