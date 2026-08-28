@@ -51,8 +51,8 @@ Primary metric: **PR-AUC**. Reported alongside Recall, Precision, Macro-F1, MCC,
 
 | Model | Balancing | PR-AUC | Recall | Precision | Brier |
 |-------|-----------|:------:|:------:|:---------:|:-----:|
-| Logistic Regression | class_weight | – | – | – | – |
-| Balanced Random Forest | built-in | – | – | – | – |
+| Logistic Regression | class_weight | 0.140 | 0.871 | 0.131 | 0.198 |
+| Balanced Random Forest | built-in | 0.204 | 0.842 | 0.139 | 0.156 |
 | XGBoost | best (Optuna) | – | – | – | – |
 | LightGBM | best (Optuna) | – | – | – | – |
 
