@@ -48,15 +48,17 @@ Primary metric: **PR-AUC**. Reported alongside Recall, Precision, Macro-F1, MCC,
 ---
 
 ## Results
+>Note on Model Comparison & Evaluation:
+>Untuned baseline models (Logistic Regression, Balanced Random Forest) are evaluated directly on the left-out validation set. Candidate models >(XGBoost, LightGBM) are tuned and compared using 5-fold cross-validation on the training set. These scores reflect different evaluation setups and are reported in separate columns to ensure fair, transparent comparisons.
 
 | Model | Balancing | PR-AUC | Recall | Precision | Brier |
 |-------|-----------|:------:|:------:|:---------:|:-----:|
 | Logistic Regression | class_weight | 0.140 | 0.871 | 0.131 | 0.198 |
 | Balanced Random Forest | built-in | 0.204 | 0.842 | 0.139 | 0.156 |
-| XGBoost | best (Optuna) | – | – | – | – |
-| LightGBM | best (Optuna) | – | – | – | – |
+| XGBoost |`class_weight`| 0.281 | 0.734 | 0.162 | 0.133 |
+| LightGBM | `SMOTENC` | 0.235 | 0.081 | 0.375 | 0.053 |
 
-Final model: ` ` · Test-set PR-AUC: ` `
+Final model: `XGBoost + class_weight ` · Test-set PR-AUC: `0.195`
 
 Key figures are in [`results/figures/`](results/figures/).
 
