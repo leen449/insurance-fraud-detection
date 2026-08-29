@@ -58,7 +58,7 @@ Primary metric: **PR-AUC**. Reported alongside Recall, Precision, Macro-F1, MCC,
 | XGBoost |`class_weight`| 0.281 | 0.734 | 0.162 | 0.133 |
 | LightGBM | `SMOTENC` | 0.235 | 0.081 | 0.375 | 0.053 |
 
-Final model: `XGBoost + class_weight ` · Test-set PR-AUC: ` `
+Final model: `XGBoost + class_weight ` · Test-set PR-AUC: `0.195`
 
 Key figures are in [`results/figures/`](results/figures/).
 
