@@ -49,8 +49,7 @@ Primary metric: **PR-AUC**. Reported alongside Recall, Precision, Macro-F1, MCC,
 
 ## Results
 >Note on Model Comparison & Evaluation:
-
->Untuned baseline models (Logistic Regression, Balanced Random Forest) are evaluated directly on the left-out validation set. Candidate models >(XGBoost, LightGBM) are tuned and compared using 5-fold cross-validation on the training set. These scores reflect different evaluation setups >and are reported in separate columns to ensure fair, transparent comparisons.
+>Untuned baseline models (Logistic Regression, Balanced Random Forest) are evaluated directly on the left-out validation set. Candidate models >(XGBoost, LightGBM) are tuned and compared using 5-fold cross-validation on the training set. These scores reflect different evaluation setups and are reported in separate columns to ensure fair, transparent comparisons.
 
 | Model | Balancing | PR-AUC | Recall | Precision | Brier |
 |-------|-----------|:------:|:------:|:---------:|:-----:|
