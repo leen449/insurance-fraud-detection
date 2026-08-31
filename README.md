@@ -95,7 +95,6 @@ insurance-fraud-detection/
 │
 ├── results/                   # small final outputs committed for graders
 │   ├── metrics.json
-│   ├── model_comparison.csv
 │   └── figures/
 │
 └── report/
