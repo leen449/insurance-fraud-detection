@@ -81,16 +81,15 @@ insurance-fraud-detection/
 │   ├── 05_calibration_and_thresholds.ipynb     # calibrate + tune threshold/tiers on VALIDATION
 │   ├── 06_final_test_evaluation.ipynb          # LOCKED TEST SET — run once, after model+calibration+thresholds frozen
 │   ├── 07_shap_and_qwen.ipynb
-│   └── 08_rubric_evaluation.ipynb              # scores GenAI briefs
+│   ├── 08_rubric_evaluation.ipynb              # scores GenAI briefs
+│   └── prompts/                # GIT-IGNORED — prompt text lives here, never committed
+│       └── brief_prompt.txt
 │
 ├── genai.py                   # loads prompt from git-ignored file; Qwen call + safety rubric
 ├── pipeline.py                # end-to-end runner
 │
 ├── app/                       # Gradio demo 
 │   └── app.py
-│
-├── prompts/                   # GIT-IGNORED — prompt text lives here, never committed
-│   └── brief_prompt.txt
 │
 ├── data/
 │   └── README.md              # dataset source + CC0 license
@@ -116,6 +115,70 @@ pip install -r requirements.txt
 
 **Environment:** developed in Google Colab. Key libraries: `scikit-learn`, `xgboost`, `lightgbm`, `imbalanced-learn`, `optuna`, `shap`. See `requirements.txt` for versions.
 
+### Google Drive Setup (Notebooks 01–07)
+
+Notebooks 01–07 run in Colab against a shared Drive folder, mounted as `PROJECT_ROOT`:
+
+```text
+InsuranceFraudProject/                 # My Drive - PROJECT_ROOT for Notebooks 01-07
+│
+├── data/
+│   ├── raw/
+│   │   └── fraud_oracle.csv           # ADD MANUALLY - the only file you place by hand
+│   └── processed/                     # auto-written by Notebook 02
+│       ├── cleaned.parquet
+│       ├── train.parquet
+│       ├── val.parquet
+│       ├── test.parquet
+│       ├── train_temporal.parquet
+│       ├── test_temporal.parquet
+│       └── split_manifest.json
+│
+├── genai/                             # manual backup copy - no notebook reads/writes this folder
+│   └── brief_prompt.txt
+│
+├── models/                            # auto-written by Notebooks 02, 04, 05
+│   ├── preprocessing_pipeline.joblib
+│   ├── best_model.joblib
+│   ├── best_model_config.json
+│   ├── calibrated_model.joblib
+│   └── risk_config.json
+│
+├── results/
+│   ├── figures/                       # auto-written by Notebooks 01, 03-07
+│   │   ├── eda/
+│   │   ├── baseline/
+│   │   ├── modelling/
+│   │   ├── calibration/
+│   │   ├── test/
+│   │   └── shap/
+│   ├── experiments/                   # manual - not produced by any notebook
+│   ├── experiments.csv                # auto-appended by Notebooks 03, 04, 05, 06
+│   ├── fairness_audit_test.json       # auto-written by Notebook 06
+│   ├── generated_briefs.json          # manual backup - Notebook 08 writes this locally, not to Drive
+│   ├── metrics.json                   # auto-written by Notebook 06
+│   └── shap_claim_briefs.json         # auto-written by Notebook 07 - see handoff note below
+│
+└── rubric/                            # manual backup - Notebook 08 writes this locally, not to Drive
+    └── brief_scores.csv
+```
+
+**Setting it up:** create a folder named exactly `InsuranceFraudProject` in `My Drive`,
+then add `data/raw/fraud_oracle.csv` — that's the only file you place there by hand.
+Everything else under `data/`, `models/`, and `results/` is generated automatically by
+running Notebooks 01→07 in order, in Colab, with the Drive mounted; each notebook reads
+what the previous one wrote and creates its own output folders as it goes.
+
+**Handoff to Notebook 08** (which runs locally, not in Colab): Notebook 07 writes
+`results/shap_claim_briefs.json` to Drive. Copy that one file down to
+`notebooks/shap_claim_briefs.json` on your machine before running Notebook 08 — that's
+the only Drive-to-local step in the whole pipeline; Notebook 08 needs no Drive access
+of its own, and writes its own outputs locally to `notebooks/{prompts,results,rubric}/`
+(see that notebook's own setup notes).
+
+**`genai/`, `experiments/`, `generated_briefs.json`, and `rubric/brief_scores.csv`** in
+the tree above are manually-kept backups, not something any Colab notebook produces —
+safe to ignore when setting up from scratch.
 
 ---
 

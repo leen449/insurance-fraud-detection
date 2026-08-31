@@ -1,0 +1,21 @@
+# Notebook 08 (local Ollama briefs) - prompt text is a local experimentation
+# artifact, not meant to be committed; it's auto-generated on first run by
+# notebooks/08_qwen_briefs_and_rubric.ipynb (Section 3) if missing.
+prompts/
+
+# Notebook 08's generated briefs - unconditionally rewritten every time Step 2
+# runs (includes the full rendered prompt per claim), fully reproducible by
+# re-running the notebook against Ollama. Scoped to notebooks/ only - the
+# repo-root results/ (figures, metrics.json from other notebooks) is
+# intentionally tracked and must not match this pattern.
+notebooks/results/
+notebooks/shap_claim_briefs.json
+notebooks/rubric/
+
+# NOTE: notebooks/rubric/brief_scores.csv is intentionally NOT ignored - it
+# holds human-entered rubric scores that Step 3 overwrites with blanks on
+# every re-run, so it isn't reproducible like the two artifacts above.
+
+# Jupyter autosave checkpoints (relevant now that Notebook 08 runs locally,
+# not only in Colab).
+.ipynb_checkpoints/
