@@ -26,4 +26,4 @@ accelerate>=0.33
 jupyter>=1.0
 
 #Gradio demo
-gradio>=4.0
+gradio>=5.0

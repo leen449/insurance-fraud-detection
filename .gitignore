@@ -19,3 +19,6 @@ notebooks/rubric/
 # Jupyter autosave checkpoints (relevant now that Notebook 08 runs locally,
 # not only in Colab).
 .ipynb_checkpoints/
+
+__pycache__/
+_audit.py

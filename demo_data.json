@@ -1,0 +1,3629 @@
+{
+  "n_total": 46,
+  "note": "All 46 SHAP+brief samples across Low/Medium/High risk tiers (High=30, Medium=8, Low=8); 44/46 passed human rubric review (95.7%, mean 7.83/8). Real validated results.",
+  "claims": [
+    {
+      "claim_id": "TEST-00111",
+      "fraud_probability": 0.5333,
+      "fraud_probability_pct": 53.3,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.5068
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.3118
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.1313
+        },
+        {
+          "feature": "MonthClaimed",
+          "value": "May",
+          "shap_contribution": 0.076
+        },
+        {
+          "feature": "Year",
+          "value": 1994,
+          "shap_contribution": 0.0539
+        }
+      ],
+      "reduced_risk_factors": [],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.53. The factors increased the fraud risk: BasePolicy = All Perils, Fault = Policy Holder, VehicleCategory = Sedan, MonthClaimed = May, Year = 1994. No factors reduced the fraud risk. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "May",
+        "WeekOfMonth": 2,
+        "DayOfWeek": "Monday",
+        "Make": "Pontiac",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Thursday",
+        "MonthClaimed": "May",
+        "WeekOfMonthClaimed": 2,
+        "Sex": "Male",
+        "MaritalStatus": "Single",
+        "Age": 31.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "20000 to 29000",
+        "Deductible": 400,
+        "DriverRating": 3,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "2 to 4",
+        "AgeOfVehicle": "6 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "none",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1994,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-00268",
+      "fraud_probability": 0.5333,
+      "fraud_probability_pct": 53.3,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.4445
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.3028
+        },
+        {
+          "feature": "Year",
+          "value": 1994,
+          "shap_contribution": 0.2657
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.1211
+        },
+        {
+          "feature": "VehiclePrice",
+          "value": "more than 69000",
+          "shap_contribution": 0.0485
+        }
+      ],
+      "reduced_risk_factors": [],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.53. The factors increased the fraud risk: BasePolicy was All Perils, Fault was Policy Holder, Year was 1994, VehicleCategory was Sedan, and VehiclePrice was more than 69000. No factors reduced the fraud risk. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "Feb",
+        "WeekOfMonth": 2,
+        "DayOfWeek": "Monday",
+        "Make": "Honda",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Monday",
+        "MonthClaimed": "Feb",
+        "WeekOfMonthClaimed": 3,
+        "Sex": "Male",
+        "MaritalStatus": "Single",
+        "Age": null,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "more than 69000",
+        "Deductible": 400,
+        "DriverRating": 3,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "1",
+        "AgeOfVehicle": "new",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "none",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1994,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": true
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-00757",
+      "fraud_probability": 0.2692,
+      "fraud_probability_pct": 26.9,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.4513
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.3045
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.1263
+        },
+        {
+          "feature": "Year",
+          "value": 1994,
+          "shap_contribution": 0.1024
+        },
+        {
+          "feature": "Age",
+          "value": 33.0,
+          "shap_contribution": 0.0372
+        }
+      ],
+      "reduced_risk_factors": [],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.27. The factors increased the fraud risk: BasePolicy = All Perils, Fault = Policy Holder, VehicleCategory = Sedan, Year = 1994, Age = 33.0. No factors reduced the fraud risk. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "Jan",
+        "WeekOfMonth": 4,
+        "DayOfWeek": "Friday",
+        "Make": "Dodge",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Tuesday",
+        "MonthClaimed": "Feb",
+        "WeekOfMonthClaimed": 1,
+        "Sex": "Male",
+        "MaritalStatus": "Single",
+        "Age": 33.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "30000 to 39000",
+        "Deductible": 400,
+        "DriverRating": 2,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "2 to 4",
+        "AgeOfVehicle": "6 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "none",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1994,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-00835",
+      "fraud_probability": 0.5333,
+      "fraud_probability_pct": 53.3,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.579
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.3061
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.129
+        },
+        {
+          "feature": "Year",
+          "value": 1994,
+          "shap_contribution": 0.1032
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "DayOfWeek",
+          "value": "Tuesday",
+          "shap_contribution": -0.068
+        }
+      ],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.53. The factors BasePolicy = All Perils, Fault = Policy Holder, VehicleCategory = Sedan, and Year = 1994 increased the fraud risk. The factor that lowered the fraud risk was DayOfWeek = Tuesday. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "Aug",
+        "WeekOfMonth": 1,
+        "DayOfWeek": "Tuesday",
+        "Make": "Pontiac",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Wednesday",
+        "MonthClaimed": "Aug",
+        "WeekOfMonthClaimed": 3,
+        "Sex": "Male",
+        "MaritalStatus": "Married",
+        "Age": 27.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "less than 20000",
+        "Deductible": 400,
+        "DriverRating": 3,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "none",
+        "AgeOfVehicle": "7 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "1 to 2",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1994,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-00936",
+      "fraud_probability": 0.2692,
+      "fraud_probability_pct": 26.9,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.47
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.3052
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.1257
+        },
+        {
+          "feature": "Age",
+          "value": 35.0,
+          "shap_contribution": 0.0817
+        },
+        {
+          "feature": "Year",
+          "value": 1994,
+          "shap_contribution": 0.0789
+        }
+      ],
+      "reduced_risk_factors": [],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.27. The factors BasePolicy = All Perils, Fault = Policy Holder, VehicleCategory = Sedan, Age = 35.0, and Year = 1994 increased the fraud risk. No factors reduced the fraud risk. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "Jan",
+        "WeekOfMonth": 5,
+        "DayOfWeek": "Saturday",
+        "Make": "Chevrolet",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Thursday",
+        "MonthClaimed": "Feb",
+        "WeekOfMonthClaimed": 2,
+        "Sex": "Male",
+        "MaritalStatus": "Married",
+        "Age": 35.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "20000 to 29000",
+        "Deductible": 400,
+        "DriverRating": 4,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "1",
+        "AgeOfVehicle": "5 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "none",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1994,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-01089",
+      "fraud_probability": 0.0451,
+      "fraud_probability_pct": 4.5,
+      "risk_tier": "Low",
+      "tier_color": "green",
+      "recommended_action": "Approve",
+      "increased_risk_factors": [
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.176
+        },
+        {
+          "feature": "BasePolicy",
+          "value": "Collision",
+          "shap_contribution": 0.0829
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "Make",
+          "value": "VW",
+          "shap_contribution": -0.4613
+        },
+        {
+          "feature": "Month",
+          "value": "Nov",
+          "shap_contribution": -0.2571
+        },
+        {
+          "feature": "MonthClaimed",
+          "value": "Dec",
+          "shap_contribution": -0.202
+        }
+      ],
+      "brief": "This claim is Low risk, with a calibrated fraud probability of 0.05. The factors that increased the fraud risk were Fault = Policy Holder and BasePolicy = Collision. The factors Make = VW; Month = Nov; and MonthClaimed = Dec lowered the fraud risk. This claim is routed for Approve.",
+      "claim_details": {
+        "Month": "Nov",
+        "WeekOfMonth": 4,
+        "DayOfWeek": "Friday",
+        "Make": "VW",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Thursday",
+        "MonthClaimed": "Dec",
+        "WeekOfMonthClaimed": 1,
+        "Sex": "Male",
+        "MaritalStatus": "Married",
+        "Age": 37.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "30000 to 39000",
+        "Deductible": 400,
+        "DriverRating": 4,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "none",
+        "AgeOfVehicle": "7 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "none",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1994,
+        "BasePolicy": "Collision",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-01639",
+      "fraud_probability": 0.117,
+      "fraud_probability_pct": 11.7,
+      "risk_tier": "Medium",
+      "tier_color": "amber",
+      "recommended_action": "Manual Review",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.3869
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.2731
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.1138
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "Age",
+          "value": 60.0,
+          "shap_contribution": -0.2177
+        },
+        {
+          "feature": "WeekOfMonthClaimed",
+          "value": 5,
+          "shap_contribution": -0.1316
+        }
+      ],
+      "brief": "This claim is Medium risk, with a calibrated fraud probability of 0.12. The factors that increased the fraud risk for this claim include BasePolicy set to All Perils, Fault assigned to Policy Holder, and VehicleCategory classified as Sedan. The factors Age = 60.0 and WeekOfMonthClaimed = 5. lowered the fraud risk. This claim is routed for Manual Review.",
+      "claim_details": {
+        "Month": "Jun",
+        "WeekOfMonth": 1,
+        "DayOfWeek": "Sunday",
+        "Make": "Pontiac",
+        "AccidentArea": "Rural",
+        "DayOfWeekClaimed": "Thursday",
+        "MonthClaimed": "Jun",
+        "WeekOfMonthClaimed": 5,
+        "Sex": "Male",
+        "MaritalStatus": "Single",
+        "Age": 60.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "20000 to 29000",
+        "Deductible": 400,
+        "DriverRating": 2,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "none",
+        "AgeOfVehicle": "more than 7",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "more than 5",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1994,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-01682",
+      "fraud_probability": 0.2456,
+      "fraud_probability_pct": 24.6,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.3461
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.3028
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.1109
+        },
+        {
+          "feature": "Month",
+          "value": "Mar",
+          "shap_contribution": 0.1026
+        },
+        {
+          "feature": "Year",
+          "value": 1994,
+          "shap_contribution": 0.0946
+        }
+      ],
+      "reduced_risk_factors": [],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.25. The factors increased the fraud risk: BasePolicy = All Perils, Fault = Policy Holder, VehicleCategory = Sedan, Month = Mar, Year = 1994. No factors reduced the fraud risk. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "Mar",
+        "WeekOfMonth": 1,
+        "DayOfWeek": "Wednesday",
+        "Make": "Accura",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Tuesday",
+        "MonthClaimed": "Mar",
+        "WeekOfMonthClaimed": 2,
+        "Sex": "Male",
+        "MaritalStatus": "Married",
+        "Age": 38.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "30000 to 39000",
+        "Deductible": 400,
+        "DriverRating": 2,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "2 to 4",
+        "AgeOfVehicle": "7 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "none",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1994,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-01945",
+      "fraud_probability": 0.5333,
+      "fraud_probability_pct": 53.3,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.4299
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.3019
+        },
+        {
+          "feature": "Year",
+          "value": 1994,
+          "shap_contribution": 0.2679
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.1298
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "AgeOfVehicle",
+          "value": "new",
+          "shap_contribution": -0.039
+        }
+      ],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.53. The factors increased the fraud risk: BasePolicy = All Perils, Fault = Policy Holder, Year = 1994, VehicleCategory = Sedan. The AgeOfVehicle = new factor lowered the fraud risk. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "Jan",
+        "WeekOfMonth": 2,
+        "DayOfWeek": "Friday",
+        "Make": "Honda",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Thursday",
+        "MonthClaimed": "Jan",
+        "WeekOfMonthClaimed": 3,
+        "Sex": "Male",
+        "MaritalStatus": "Single",
+        "Age": null,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "more than 69000",
+        "Deductible": 400,
+        "DriverRating": 3,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "none",
+        "AgeOfVehicle": "new",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "none",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1994,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": true
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-02040",
+      "fraud_probability": 1.0,
+      "fraud_probability_pct": 100.0,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "Deductible",
+          "value": 500,
+          "shap_contribution": 1.0506
+        },
+        {
+          "feature": "AddressChange_Claim",
+          "value": "2 to 3 years",
+          "shap_contribution": 0.4891
+        },
+        {
+          "feature": "BasePolicy",
+          "value": "Collision",
+          "shap_contribution": 0.1998
+        },
+        {
+          "feature": "Age",
+          "value": 41.0,
+          "shap_contribution": 0.0664
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "Fault",
+          "value": "Third Party",
+          "shap_contribution": -0.1148
+        }
+      ],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 1.00. The factors that increased the fraud risk for this claim include a deductible of 500, an address change of 2 to 3 years, a collision base policy, and an age of 41.0. The factor that lowered the fraud risk was Fault = Third Party. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "Jun",
+        "WeekOfMonth": 3,
+        "DayOfWeek": "Thursday",
+        "Make": "Chevrolet",
+        "AccidentArea": "Rural",
+        "DayOfWeekClaimed": "Thursday",
+        "MonthClaimed": "Jun",
+        "WeekOfMonthClaimed": 3,
+        "Sex": "Male",
+        "MaritalStatus": "Married",
+        "Age": 41.0,
+        "Fault": "Third Party",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "more than 69000",
+        "Deductible": 500,
+        "DriverRating": 4,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "none",
+        "AgeOfVehicle": "7 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "1 to 2",
+        "AddressChange_Claim": "2 to 3 years",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1994,
+        "BasePolicy": "Collision",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-02209",
+      "fraud_probability": 0.096,
+      "fraud_probability_pct": 9.6,
+      "risk_tier": "Medium",
+      "tier_color": "amber",
+      "recommended_action": "Manual Review",
+      "increased_risk_factors": [
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.251
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.0999
+        },
+        {
+          "feature": "BasePolicy",
+          "value": "Collision",
+          "shap_contribution": 0.0737
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "NumberOfSuppliments",
+          "value": "more than 5",
+          "shap_contribution": -0.0958
+        },
+        {
+          "feature": "Age",
+          "value": 49.0,
+          "shap_contribution": -0.0819
+        }
+      ],
+      "brief": "This claim is Medium risk, with a calibrated fraud probability of 0.10. The factors that increased the fraud risk for this claim include Fault being Policy Holder, VehicleCategory being Sedan, and BasePolicy being Collision. The factors that lowered the fraud risk were taking more than 5 supplements and being 49 years old. This claim is routed for Manual Review.",
+      "claim_details": {
+        "Month": "Feb",
+        "WeekOfMonth": 2,
+        "DayOfWeek": "Wednesday",
+        "Make": "Mazda",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Wednesday",
+        "MonthClaimed": "Feb",
+        "WeekOfMonthClaimed": 2,
+        "Sex": "Female",
+        "MaritalStatus": "Married",
+        "Age": 49.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "20000 to 29000",
+        "Deductible": 400,
+        "DriverRating": 4,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "none",
+        "AgeOfVehicle": "more than 7",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "more than 5",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1994,
+        "BasePolicy": "Collision",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-03003",
+      "fraud_probability": 0.004,
+      "fraud_probability_pct": 0.4,
+      "risk_tier": "Low",
+      "tier_color": "green",
+      "recommended_action": "Approve",
+      "increased_risk_factors": [
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.1214
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "Liability",
+          "shap_contribution": -1.09
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sport",
+          "shap_contribution": -0.3729
+        },
+        {
+          "feature": "Age",
+          "value": 52.0,
+          "shap_contribution": -0.1455
+        },
+        {
+          "feature": "Make",
+          "value": "Mazda",
+          "shap_contribution": -0.124
+        }
+      ],
+      "brief": "This claim is Low risk, with a calibrated fraud probability of 0.00. Fault was assigned to the Policy Holder, increasing the fraud risk. The factors BasePolicy = Liability, VehicleCategory = Sport, Age = 52.0, and Make = Mazda lowered the fraud risk. This claim is routed for Approve.",
+      "claim_details": {
+        "Month": "Jun",
+        "WeekOfMonth": 5,
+        "DayOfWeek": "Tuesday",
+        "Make": "Mazda",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Wednesday",
+        "MonthClaimed": "Jun",
+        "WeekOfMonthClaimed": 5,
+        "Sex": "Male",
+        "MaritalStatus": "Married",
+        "Age": 52.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sport",
+        "VehiclePrice": "20000 to 29000",
+        "Deductible": 400,
+        "DriverRating": 2,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "more than 4",
+        "AgeOfVehicle": "more than 7",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "3 to 5",
+        "AddressChange_Claim": "1 year",
+        "NumberOfCars": "2 vehicles",
+        "Year": 1994,
+        "BasePolicy": "Liability",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-03334",
+      "fraud_probability": 0.1245,
+      "fraud_probability_pct": 12.4,
+      "risk_tier": "Medium",
+      "tier_color": "amber",
+      "recommended_action": "Manual Review",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "Collision",
+          "shap_contribution": 0.3438
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.2768
+        },
+        {
+          "feature": "VehiclePrice",
+          "value": "more than 69000",
+          "shap_contribution": 0.1082
+        },
+        {
+          "feature": "Age",
+          "value": 20.0,
+          "shap_contribution": 0.0687
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "VehicleCategory",
+          "value": "Sport",
+          "shap_contribution": -0.1793
+        }
+      ],
+      "brief": "This claim is Medium risk, with a calibrated fraud probability of 0.12. The fraud risk increased due to the BasePolicy being Collision, Fault being Policy Holder, VehiclePrice being more than 69000, and Age being 20.0. The VehicleCategory being Sport lowered the fraud risk. This claim is routed for Manual Review.",
+      "claim_details": {
+        "Month": "May",
+        "WeekOfMonth": 1,
+        "DayOfWeek": "Wednesday",
+        "Make": "Honda",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Friday",
+        "MonthClaimed": "May",
+        "WeekOfMonthClaimed": 2,
+        "Sex": "Male",
+        "MaritalStatus": "Single",
+        "Age": 20.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sport",
+        "VehiclePrice": "more than 69000",
+        "Deductible": 400,
+        "DriverRating": 2,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "none",
+        "AgeOfVehicle": "3 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "none",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1994,
+        "BasePolicy": "Collision",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-03365",
+      "fraud_probability": 0.004,
+      "fraud_probability_pct": 0.4,
+      "risk_tier": "Low",
+      "tier_color": "green",
+      "recommended_action": "Approve",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "Collision",
+          "shap_contribution": 0.0603
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "Fault",
+          "value": "Third Party",
+          "shap_contribution": -1.4173
+        },
+        {
+          "feature": "Deductible",
+          "value": 400,
+          "shap_contribution": -0.2011
+        },
+        {
+          "feature": "AddressChange_Claim",
+          "value": "no change",
+          "shap_contribution": -0.0909
+        },
+        {
+          "feature": "NumberOfSuppliments",
+          "value": "more than 5",
+          "shap_contribution": -0.071
+        }
+      ],
+      "brief": "This claim is Low risk, with a calibrated fraud probability of 0.00. The increased fraud risk for the claim was attributed to the BasePolicy being set as Collision. The factors Fault = Third Party; Deductible = 400; AddressChange_Claim = no change; NumberOfSuppliments = more than 5 lowered the fraud risk. This claim is routed for Approve.",
+      "claim_details": {
+        "Month": "May",
+        "WeekOfMonth": 5,
+        "DayOfWeek": "Saturday",
+        "Make": "Honda",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Monday",
+        "MonthClaimed": "May",
+        "WeekOfMonthClaimed": 5,
+        "Sex": "Male",
+        "MaritalStatus": "Married",
+        "Age": 38.0,
+        "Fault": "Third Party",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "more than 69000",
+        "Deductible": 400,
+        "DriverRating": 1,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "none",
+        "AgeOfVehicle": "7 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "more than 5",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1994,
+        "BasePolicy": "Collision",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-03471",
+      "fraud_probability": 0.1743,
+      "fraud_probability_pct": 17.4,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.3485
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.2832
+        },
+        {
+          "feature": "Year",
+          "value": 1994,
+          "shap_contribution": 0.1314
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.0707
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "Age",
+          "value": 80.0,
+          "shap_contribution": -0.2156
+        }
+      ],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.17. The factors increased the fraud risk: BasePolicy = All Perils, Fault = Policy Holder, Year = 1994, VehicleCategory = Sedan. The factor Age = 80.0 lowered the fraud risk. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "Feb",
+        "WeekOfMonth": 3,
+        "DayOfWeek": "Monday",
+        "Make": "Toyota",
+        "AccidentArea": "Rural",
+        "DayOfWeekClaimed": "Friday",
+        "MonthClaimed": "Feb",
+        "WeekOfMonthClaimed": 3,
+        "Sex": "Male",
+        "MaritalStatus": "Married",
+        "Age": 80.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "less than 20000",
+        "Deductible": 400,
+        "DriverRating": 3,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "1",
+        "AgeOfVehicle": "7 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "none",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1994,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-03662",
+      "fraud_probability": 0.004,
+      "fraud_probability_pct": 0.4,
+      "risk_tier": "Low",
+      "tier_color": "green",
+      "recommended_action": "Approve",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "Collision",
+          "shap_contribution": 0.0604
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "Fault",
+          "value": "Third Party",
+          "shap_contribution": -1.4675
+        },
+        {
+          "feature": "Deductible",
+          "value": 400,
+          "shap_contribution": -0.1445
+        },
+        {
+          "feature": "Age",
+          "value": 51.0,
+          "shap_contribution": -0.0823
+        },
+        {
+          "feature": "AddressChange_Claim",
+          "value": "no change",
+          "shap_contribution": -0.0773
+        }
+      ],
+      "brief": "This claim is Low risk, with a calibrated fraud probability of 0.00. The increased fraud risk for the claim was attributed to the BasePolicy being set as Collision. The factors Fault = Third Party; Deductible = 400; and Age = 51.0 lowered the fraud risk, while AddressChange_Claim = no change did not affect the risk. This claim is routed for Approve.",
+      "claim_details": {
+        "Month": "May",
+        "WeekOfMonth": 3,
+        "DayOfWeek": "Saturday",
+        "Make": "Toyota",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Tuesday",
+        "MonthClaimed": "May",
+        "WeekOfMonthClaimed": 3,
+        "Sex": "Male",
+        "MaritalStatus": "Married",
+        "Age": 51.0,
+        "Fault": "Third Party",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "20000 to 29000",
+        "Deductible": 400,
+        "DriverRating": 1,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "more than 4",
+        "AgeOfVehicle": "more than 7",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "none",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1994,
+        "BasePolicy": "Collision",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 0,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 6,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "SHAP issue is clear: AddressChange_Claim has a negative SHAP contribution, but the brief says it 'did not affect the risk.'"
+      }
+    },
+    {
+      "claim_id": "TEST-03724",
+      "fraud_probability": 0.5333,
+      "fraud_probability_pct": 53.3,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.4871
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.3117
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.1207
+        },
+        {
+          "feature": "MonthClaimed",
+          "value": "May",
+          "shap_contribution": 0.0775
+        },
+        {
+          "feature": "Year",
+          "value": 1994,
+          "shap_contribution": 0.0522
+        }
+      ],
+      "reduced_risk_factors": [],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.53. The factors BasePolicy = All Perils, Fault = Policy Holder, VehicleCategory = Sedan, MonthClaimed = May, and Year = 1994 increased the fraud risk. No factors reduced the fraud risk. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "May",
+        "WeekOfMonth": 3,
+        "DayOfWeek": "Monday",
+        "Make": "Chevrolet",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Tuesday",
+        "MonthClaimed": "May",
+        "WeekOfMonthClaimed": 4,
+        "Sex": "Male",
+        "MaritalStatus": "Single",
+        "Age": 30.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "20000 to 29000",
+        "Deductible": 400,
+        "DriverRating": 3,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "none",
+        "AgeOfVehicle": "6 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "none",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1994,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-03884",
+      "fraud_probability": 0.2456,
+      "fraud_probability_pct": 24.6,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.5356
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.2951
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.1061
+        },
+        {
+          "feature": "MonthClaimed",
+          "value": "May",
+          "shap_contribution": 0.0879
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "Age",
+          "value": 65.0,
+          "shap_contribution": -0.1667
+        }
+      ],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.25. The factors increased the fraud risk: BasePolicy = All Perils, Fault = Policy Holder, VehicleCategory = Sedan, MonthClaimed = May. The factor Age = 65.0 lowered the fraud risk. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "May",
+        "WeekOfMonth": 4,
+        "DayOfWeek": "Monday",
+        "Make": "Toyota",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Tuesday",
+        "MonthClaimed": "May",
+        "WeekOfMonthClaimed": 4,
+        "Sex": "Male",
+        "MaritalStatus": "Married",
+        "Age": 65.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "20000 to 29000",
+        "Deductible": 400,
+        "DriverRating": 2,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "1",
+        "AgeOfVehicle": "more than 7",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "more than 5",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1994,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-04027",
+      "fraud_probability": 0.5333,
+      "fraud_probability_pct": 53.3,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.4023
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.303
+        },
+        {
+          "feature": "Year",
+          "value": 1994,
+          "shap_contribution": 0.2619
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.1253
+        },
+        {
+          "feature": "VehiclePrice",
+          "value": "more than 69000",
+          "shap_contribution": 0.0457
+        }
+      ],
+      "reduced_risk_factors": [],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.53. The factors increased the fraud risk: BasePolicy was All Perils, Fault was Policy Holder, Year was 1994, VehicleCategory was Sedan, and VehiclePrice was more than 69000. No factors reduced the fraud risk. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "Feb",
+        "WeekOfMonth": 2,
+        "DayOfWeek": "Monday",
+        "Make": "Honda",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Friday",
+        "MonthClaimed": "Feb",
+        "WeekOfMonthClaimed": 3,
+        "Sex": "Male",
+        "MaritalStatus": "Single",
+        "Age": null,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "more than 69000",
+        "Deductible": 400,
+        "DriverRating": 4,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "none",
+        "AgeOfVehicle": "new",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "none",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1994,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": true
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-04111",
+      "fraud_probability": 0.004,
+      "fraud_probability_pct": 0.4,
+      "risk_tier": "Low",
+      "tier_color": "green",
+      "recommended_action": "Approve",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.1685
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "Fault",
+          "value": "Third Party",
+          "shap_contribution": -1.6858
+        },
+        {
+          "feature": "Deductible",
+          "value": 400,
+          "shap_contribution": -0.198
+        },
+        {
+          "feature": "AddressChange_Claim",
+          "value": "no change",
+          "shap_contribution": -0.0912
+        },
+        {
+          "feature": "DriverRating",
+          "value": 1,
+          "shap_contribution": -0.0371
+        }
+      ],
+      "brief": "This claim is Low risk, with a calibrated fraud probability of 0.00. The BasePolicy being All Perils increased the fraud risk. The factors Fault = Third Party; Deductible = 400; and AddressChange_Claim = no change lowered the fraud risk. This claim is routed for Approve.",
+      "claim_details": {
+        "Month": "Apr",
+        "WeekOfMonth": 4,
+        "DayOfWeek": "Monday",
+        "Make": "Toyota",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Tuesday",
+        "MonthClaimed": "May",
+        "WeekOfMonthClaimed": 1,
+        "Sex": "Male",
+        "MaritalStatus": "Single",
+        "Age": 22.0,
+        "Fault": "Third Party",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "20000 to 29000",
+        "Deductible": 400,
+        "DriverRating": 1,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "none",
+        "AgeOfVehicle": "5 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "none",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1994,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-04535",
+      "fraud_probability": 0.1245,
+      "fraud_probability_pct": 12.4,
+      "risk_tier": "Medium",
+      "tier_color": "amber",
+      "recommended_action": "Manual Review",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.4061
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.2805
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.1195
+        },
+        {
+          "feature": "Year",
+          "value": 1994,
+          "shap_contribution": 0.0771
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "Sex",
+          "value": "Female",
+          "shap_contribution": -0.0919
+        }
+      ],
+      "brief": "This claim is Medium risk, with a calibrated fraud probability of 0.12. The factors increased the fraud risk: BasePolicy = All Perils, Fault = Policy Holder, VehicleCategory = Sedan, Year = 1994. The fact that Sex = Female lowered the fraud risk. This claim is routed for Manual Review.",
+      "claim_details": {
+        "Month": "Jun",
+        "WeekOfMonth": 4,
+        "DayOfWeek": "Sunday",
+        "Make": "Honda",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Wednesday",
+        "MonthClaimed": "Jul",
+        "WeekOfMonthClaimed": 3,
+        "Sex": "Female",
+        "MaritalStatus": "Married",
+        "Age": 43.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "20000 to 29000",
+        "Deductible": 400,
+        "DriverRating": 2,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "2 to 4",
+        "AgeOfVehicle": "7 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "1 to 2",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1994,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-04807",
+      "fraud_probability": 0.5333,
+      "fraud_probability_pct": 53.3,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.5394
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.3069
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.1254
+        },
+        {
+          "feature": "Year",
+          "value": 1994,
+          "shap_contribution": 0.0891
+        },
+        {
+          "feature": "Age",
+          "value": 31.0,
+          "shap_contribution": 0.0649
+        }
+      ],
+      "reduced_risk_factors": [],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.53. The factors BasePolicy = All Perils, Fault = Policy Holder, VehicleCategory = Sedan, Year = 1994, and Age = 31.0 increased the fraud risk. No factors reduced the fraud risk. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "Aug",
+        "WeekOfMonth": 3,
+        "DayOfWeek": "Monday",
+        "Make": "Pontiac",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Tuesday",
+        "MonthClaimed": "Sep",
+        "WeekOfMonthClaimed": 2,
+        "Sex": "Male",
+        "MaritalStatus": "Single",
+        "Age": 31.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "20000 to 29000",
+        "Deductible": 400,
+        "DriverRating": 4,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "more than 4",
+        "AgeOfVehicle": "7 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "none",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1994,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-04885",
+      "fraud_probability": 0.2692,
+      "fraud_probability_pct": 26.9,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.4503
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.298
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.1275
+        },
+        {
+          "feature": "Age",
+          "value": 35.0,
+          "shap_contribution": 0.1084
+        },
+        {
+          "feature": "Year",
+          "value": 1994,
+          "shap_contribution": 0.0983
+        }
+      ],
+      "reduced_risk_factors": [],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.27. The factors BasePolicy = All Perils, Fault = Policy Holder, VehicleCategory = Sedan, Age = 35.0, and Year = 1994 increased the fraud risk. No factors reduced the fraud risk. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "Jan",
+        "WeekOfMonth": 1,
+        "DayOfWeek": "Sunday",
+        "Make": "Chevrolet",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Tuesday",
+        "MonthClaimed": "Jan",
+        "WeekOfMonthClaimed": 1,
+        "Sex": "Female",
+        "MaritalStatus": "Single",
+        "Age": 35.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "20000 to 29000",
+        "Deductible": 400,
+        "DriverRating": 3,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "1",
+        "AgeOfVehicle": "6 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "3 to 5",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1994,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-04931",
+      "fraud_probability": 0.117,
+      "fraud_probability_pct": 11.7,
+      "risk_tier": "Medium",
+      "tier_color": "amber",
+      "recommended_action": "Manual Review",
+      "increased_risk_factors": [
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.2611
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.0996
+        },
+        {
+          "feature": "MonthClaimed",
+          "value": "Aug",
+          "shap_contribution": 0.0522
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "Sex",
+          "value": "Female",
+          "shap_contribution": -0.1311
+        },
+        {
+          "feature": "Make",
+          "value": "Pontiac",
+          "shap_contribution": -0.0535
+        }
+      ],
+      "brief": "This claim is Medium risk, with a calibrated fraud probability of 0.12. The factors that increased the fraud risk for this claim include Fault being Policy Holder, the VehicleCategory being Sedan, and the MonthClaimed being Aug. The factors Sex = Female and Make = Pontiac lowered the fraud risk. This claim is routed for Manual Review.",
+      "claim_details": {
+        "Month": "Aug",
+        "WeekOfMonth": 3,
+        "DayOfWeek": "Monday",
+        "Make": "Pontiac",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Friday",
+        "MonthClaimed": "Aug",
+        "WeekOfMonthClaimed": 4,
+        "Sex": "Female",
+        "MaritalStatus": "Single",
+        "Age": 31.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "20000 to 29000",
+        "Deductible": 400,
+        "DriverRating": 2,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "1",
+        "AgeOfVehicle": "5 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "none",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1994,
+        "BasePolicy": "Collision",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-05376",
+      "fraud_probability": 0.1743,
+      "fraud_probability_pct": 17.4,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.4524
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.2796
+        },
+        {
+          "feature": "Age",
+          "value": 28.0,
+          "shap_contribution": 0.1118
+        },
+        {
+          "feature": "Year",
+          "value": 1994,
+          "shap_contribution": 0.1008
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "Month",
+          "value": "Jan",
+          "shap_contribution": -0.0659
+        }
+      ],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.17. The factors increased the fraud risk: BasePolicy = All Perils, Fault = Policy Holder, Age = 28.0, Year = 1994. The following factors lowered the fraud risk: Month = Jan. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "Jan",
+        "WeekOfMonth": 4,
+        "DayOfWeek": "Wednesday",
+        "Make": "Chevrolet",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Wednesday",
+        "MonthClaimed": "Apr",
+        "WeekOfMonthClaimed": 3,
+        "Sex": "Male",
+        "MaritalStatus": "Single",
+        "Age": 28.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Utility",
+        "VehiclePrice": "more than 69000",
+        "Deductible": 400,
+        "DriverRating": 1,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "more than 4",
+        "AgeOfVehicle": "6 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "none",
+        "AddressChange_Claim": "4 to 8 years",
+        "NumberOfCars": "2 vehicles",
+        "Year": 1994,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-05429",
+      "fraud_probability": 0.5333,
+      "fraud_probability_pct": 53.3,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.4036
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.31
+        },
+        {
+          "feature": "Year",
+          "value": 1994,
+          "shap_contribution": 0.2331
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.1214
+        },
+        {
+          "feature": "MonthClaimed",
+          "value": "May",
+          "shap_contribution": 0.0673
+        }
+      ],
+      "reduced_risk_factors": [],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.53. The factors increased the fraud risk: BasePolicy = All Perils, Fault = Policy Holder, Year = 1994, VehicleCategory = Sedan, MonthClaimed = May. No factors reduced the fraud risk. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "Mar",
+        "WeekOfMonth": 5,
+        "DayOfWeek": "Monday",
+        "Make": "Honda",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Friday",
+        "MonthClaimed": "May",
+        "WeekOfMonthClaimed": 1,
+        "Sex": "Male",
+        "MaritalStatus": "Single",
+        "Age": null,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "more than 69000",
+        "Deductible": 400,
+        "DriverRating": 4,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "none",
+        "AgeOfVehicle": "new",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "none",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1994,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": true
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-05548",
+      "fraud_probability": 0.2692,
+      "fraud_probability_pct": 26.9,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.5401
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.301
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.1214
+        },
+        {
+          "feature": "MonthClaimed",
+          "value": "Aug",
+          "shap_contribution": 0.0725
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "Sex",
+          "value": "Female",
+          "shap_contribution": -0.0949
+        }
+      ],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.27. The factors increased the fraud risk: BasePolicy = All Perils, Fault = Policy Holder, VehicleCategory = Sedan, MonthClaimed = Aug. The fact that Sex = Female lowered the fraud risk. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "Aug",
+        "WeekOfMonth": 1,
+        "DayOfWeek": "Saturday",
+        "Make": "Pontiac",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Thursday",
+        "MonthClaimed": "Aug",
+        "WeekOfMonthClaimed": 2,
+        "Sex": "Female",
+        "MaritalStatus": "Married",
+        "Age": 35.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "less than 20000",
+        "Deductible": 400,
+        "DriverRating": 4,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "1",
+        "AgeOfVehicle": "5 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "more than 5",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1994,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-06183",
+      "fraud_probability": 0.1743,
+      "fraud_probability_pct": 17.4,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.4406
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.2694
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.1091
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "DayOfWeek",
+          "value": "Tuesday",
+          "shap_contribution": -0.077
+        },
+        {
+          "feature": "Make",
+          "value": "Toyota",
+          "shap_contribution": -0.0642
+        }
+      ],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.17. The factors increased the fraud risk: BasePolicy = All Perils, Fault = Policy Holder, and VehicleCategory = Sedan. The fraud risk was lowered on a Tuesday and the vehicle was a Toyota. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "Sep",
+        "WeekOfMonth": 1,
+        "DayOfWeek": "Tuesday",
+        "Make": "Toyota",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Wednesday",
+        "MonthClaimed": "Sep",
+        "WeekOfMonthClaimed": 3,
+        "Sex": "Male",
+        "MaritalStatus": "Married",
+        "Age": 40.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "20000 to 29000",
+        "Deductible": 400,
+        "DriverRating": 1,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "2 to 4",
+        "AgeOfVehicle": "7 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "1 to 2",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1995,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-06584",
+      "fraud_probability": 0.004,
+      "fraud_probability_pct": 0.4,
+      "risk_tier": "Low",
+      "tier_color": "green",
+      "recommended_action": "Approve",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "Collision",
+          "shap_contribution": 0.0726
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.0392
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "Fault",
+          "value": "Third Party",
+          "shap_contribution": -1.5
+        },
+        {
+          "feature": "Deductible",
+          "value": 400,
+          "shap_contribution": -0.1976
+        },
+        {
+          "feature": "AddressChange_Claim",
+          "value": "no change",
+          "shap_contribution": -0.0899
+        }
+      ],
+      "brief": "This claim is Low risk, with a calibrated fraud probability of 0.00. The factors that increased the fraud risk were BasePolicy set to Collision and VehicleCategory set to Sedan. The factors Fault = Third Party; Deductible = 400; AddressChange_Claim = no change lowered the fraud risk. This claim is routed for Approve.",
+      "claim_details": {
+        "Month": "Apr",
+        "WeekOfMonth": 5,
+        "DayOfWeek": "Saturday",
+        "Make": "Pontiac",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Thursday",
+        "MonthClaimed": "May",
+        "WeekOfMonthClaimed": 1,
+        "Sex": "Male",
+        "MaritalStatus": "Married",
+        "Age": 33.0,
+        "Fault": "Third Party",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "20000 to 29000",
+        "Deductible": 400,
+        "DriverRating": 4,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "none",
+        "AgeOfVehicle": "7 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "3 to 5",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1995,
+        "BasePolicy": "Collision",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-06854",
+      "fraud_probability": 0.1743,
+      "fraud_probability_pct": 17.4,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.2796
+        },
+        {
+          "feature": "BasePolicy",
+          "value": "Collision",
+          "shap_contribution": 0.177
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.0844
+        },
+        {
+          "feature": "NumberOfSuppliments",
+          "value": "none",
+          "shap_contribution": 0.0377
+        },
+        {
+          "feature": "MonthClaimed",
+          "value": "Oct",
+          "shap_contribution": 0.0329
+        }
+      ],
+      "reduced_risk_factors": [],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.17. The claim with Fault assigned to Policy Holder, BasePolicy as Collision, VehicleCategory as Sedan, no supplemental coverage, and claimed in October increased the fraud risk. No factors reduced the fraud risk. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "Oct",
+        "WeekOfMonth": 1,
+        "DayOfWeek": "Sunday",
+        "Make": "Chevrolet",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Wednesday",
+        "MonthClaimed": "Oct",
+        "WeekOfMonthClaimed": 1,
+        "Sex": "Male",
+        "MaritalStatus": "Married",
+        "Age": 28.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "20000 to 29000",
+        "Deductible": 400,
+        "DriverRating": 2,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "2 to 4",
+        "AgeOfVehicle": "7 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "none",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1995,
+        "BasePolicy": "Collision",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 1,
+        "total": 7,
+        "max_total": 8,
+        "verdict": "FAIL",
+        "reviewer_notes": "Manual review: 'no supplemental coverage' is an interpretation of NumberOfSuppliments = none, and wording should be judged for factual precision."
+      }
+    },
+    {
+      "claim_id": "TEST-06928",
+      "fraud_probability": 0.0735,
+      "fraud_probability_pct": 7.3,
+      "risk_tier": "Low",
+      "tier_color": "green",
+      "recommended_action": "Approve",
+      "increased_risk_factors": [
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.2396
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "DayOfWeek",
+          "value": "Tuesday",
+          "shap_contribution": -0.145
+        },
+        {
+          "feature": "Age",
+          "value": 53.0,
+          "shap_contribution": -0.1147
+        },
+        {
+          "feature": "NumberOfSuppliments",
+          "value": "more than 5",
+          "shap_contribution": -0.0953
+        },
+        {
+          "feature": "Make",
+          "value": "Pontiac",
+          "shap_contribution": -0.077
+        }
+      ],
+      "brief": "This claim is Low risk, with a calibrated fraud probability of 0.07. Fault was assigned to the Policy Holder, increasing the fraud risk. The fraud risk was lowered for the claim made on a Tuesday, by the claimant who is 53 years old, who takes more than 5 supplements, and whose vehicle is a Pontiac. This claim is routed for Approve.",
+      "claim_details": {
+        "Month": "Dec",
+        "WeekOfMonth": 4,
+        "DayOfWeek": "Tuesday",
+        "Make": "Pontiac",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Tuesday",
+        "MonthClaimed": "Jan",
+        "WeekOfMonthClaimed": 1,
+        "Sex": "Male",
+        "MaritalStatus": "Married",
+        "Age": 53.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "20000 to 29000",
+        "Deductible": 400,
+        "DriverRating": 3,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "none",
+        "AgeOfVehicle": "more than 7",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "more than 5",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1995,
+        "BasePolicy": "Collision",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 1,
+        "faithfulness_to_shap": 1,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 6,
+        "max_total": 8,
+        "verdict": "FAIL",
+        "reviewer_notes": "Manual review: 'claim made on a Tuesday' may conflate DayOfWeek (accident day) with claim-submission timing."
+      }
+    },
+    {
+      "claim_id": "TEST-07018",
+      "fraud_probability": 0.1743,
+      "fraud_probability_pct": 17.4,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.4115
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.2774
+        },
+        {
+          "feature": "Year",
+          "value": 1995,
+          "shap_contribution": 0.1144
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.0934
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "NumberOfSuppliments",
+          "value": "more than 5",
+          "shap_contribution": -0.079
+        }
+      ],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.17. The factors increased the fraud risk: BasePolicy = All Perils, Fault = Policy Holder, Year = 1995, and VehicleCategory = Sedan. The factor NumberOfSuppliments = more than 5 lowered the fraud risk. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "Oct",
+        "WeekOfMonth": 2,
+        "DayOfWeek": "Saturday",
+        "Make": "Toyota",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Monday",
+        "MonthClaimed": "Oct",
+        "WeekOfMonthClaimed": 4,
+        "Sex": "Male",
+        "MaritalStatus": "Single",
+        "Age": 19.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "20000 to 29000",
+        "Deductible": 400,
+        "DriverRating": 1,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "none",
+        "AgeOfVehicle": "3 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "more than 5",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1995,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-07036",
+      "fraud_probability": 0.117,
+      "fraud_probability_pct": 11.7,
+      "risk_tier": "Medium",
+      "tier_color": "amber",
+      "recommended_action": "Manual Review",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.3006
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.2673
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.1079
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "Age",
+          "value": 51.0,
+          "shap_contribution": -0.1401
+        },
+        {
+          "feature": "PastNumberOfClaims",
+          "value": "more than 4",
+          "shap_contribution": -0.0839
+        }
+      ],
+      "brief": "This claim is Medium risk, with a calibrated fraud probability of 0.12. The factors increased the fraud risk: BasePolicy = All Perils, Fault = Policy Holder, and VehicleCategory = Sedan. The factors Age = 51.0 and PastNumberOfClaims = more than 4 lowered the fraud risk. This claim is routed for Manual Review.",
+      "claim_details": {
+        "Month": "Jan",
+        "WeekOfMonth": 2,
+        "DayOfWeek": "Tuesday",
+        "Make": "Ford",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Thursday",
+        "MonthClaimed": "Jan",
+        "WeekOfMonthClaimed": 3,
+        "Sex": "Male",
+        "MaritalStatus": "Married",
+        "Age": 51.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "30000 to 39000",
+        "Deductible": 400,
+        "DriverRating": 3,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "more than 4",
+        "AgeOfVehicle": "6 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "3 to 5",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1995,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-07330",
+      "fraud_probability": 0.1743,
+      "fraud_probability_pct": 17.4,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.2814
+        },
+        {
+          "feature": "Month",
+          "value": "Mar",
+          "shap_contribution": 0.1892
+        },
+        {
+          "feature": "BasePolicy",
+          "value": "Collision",
+          "shap_contribution": 0.1282
+        },
+        {
+          "feature": "MonthClaimed",
+          "value": "Mar",
+          "shap_contribution": 0.083
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "NumberOfSuppliments",
+          "value": "more than 5",
+          "shap_contribution": -0.1062
+        }
+      ],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.17. The factors Fault = Policy Holder, Month = Mar, and BasePolicy = Collision increased the fraud risk for the claim made in March. The factor NumberOfSuppliments = more than 5 lowered the fraud risk. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "Mar",
+        "WeekOfMonth": 2,
+        "DayOfWeek": "Saturday",
+        "Make": "Pontiac",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Monday",
+        "MonthClaimed": "Mar",
+        "WeekOfMonthClaimed": 2,
+        "Sex": "Female",
+        "MaritalStatus": "Married",
+        "Age": 44.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "20000 to 29000",
+        "Deductible": 400,
+        "DriverRating": 3,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "1",
+        "AgeOfVehicle": "7 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "more than 5",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1995,
+        "BasePolicy": "Collision",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 1,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 7,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Manual review: both Month and MonthClaimed are March; 'claim made in March' is supported by MonthClaimed, but the sentence also refers to Month."
+      }
+    },
+    {
+      "claim_id": "TEST-07598",
+      "fraud_probability": 0.1743,
+      "fraud_probability_pct": 17.4,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.4829
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.2906
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.1158
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "Age",
+          "value": 64.0,
+          "shap_contribution": -0.1492
+        },
+        {
+          "feature": "Year",
+          "value": 1995,
+          "shap_contribution": -0.0438
+        }
+      ],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.17. The factors increased the fraud risk: BasePolicy = All Perils, Fault = Policy Holder, and VehicleCategory = Sedan. The factors Age = 64.0 and Year = 1995 lowered the fraud risk. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "May",
+        "WeekOfMonth": 5,
+        "DayOfWeek": "Saturday",
+        "Make": "Pontiac",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Wednesday",
+        "MonthClaimed": "Jun",
+        "WeekOfMonthClaimed": 1,
+        "Sex": "Male",
+        "MaritalStatus": "Married",
+        "Age": 64.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "30000 to 39000",
+        "Deductible": 400,
+        "DriverRating": 1,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "none",
+        "AgeOfVehicle": "6 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "none",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1995,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-08486",
+      "fraud_probability": 0.1743,
+      "fraud_probability_pct": 17.4,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.4232
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.287
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.0991
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "Make",
+          "value": "Honda",
+          "shap_contribution": -0.0657
+        },
+        {
+          "feature": "DayOfWeekClaimed",
+          "value": "Monday",
+          "shap_contribution": -0.0524
+        }
+      ],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.17. The factors increased the fraud risk: BasePolicy = All Perils, Fault = Policy Holder, and VehicleCategory = Sedan. The factors Make = Honda and DayOfWeekClaimed = Monday lowered the fraud risk. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "Dec",
+        "WeekOfMonth": 2,
+        "DayOfWeek": "Friday",
+        "Make": "Honda",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Monday",
+        "MonthClaimed": "Jan",
+        "WeekOfMonthClaimed": 3,
+        "Sex": "Male",
+        "MaritalStatus": "Single",
+        "Age": 22.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "less than 20000",
+        "Deductible": 400,
+        "DriverRating": 3,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "none",
+        "AgeOfVehicle": "3 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "none",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1995,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-08754",
+      "fraud_probability": 0.004,
+      "fraud_probability_pct": 0.4,
+      "risk_tier": "Low",
+      "tier_color": "green",
+      "recommended_action": "Approve",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.1707
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "Fault",
+          "value": "Third Party",
+          "shap_contribution": -1.5667
+        },
+        {
+          "feature": "Deductible",
+          "value": 400,
+          "shap_contribution": -0.2011
+        },
+        {
+          "feature": "AddressChange_Claim",
+          "value": "no change",
+          "shap_contribution": -0.0909
+        },
+        {
+          "feature": "DayOfWeek",
+          "value": "Thursday",
+          "shap_contribution": -0.042
+        }
+      ],
+      "brief": "This claim is Low risk, with a calibrated fraud probability of 0.00. The BasePolicy being All Perils increased the fraud risk. The factors Fault = Third Party; Deductible = 400; and AddressChange_Claim = no change lowered the fraud risk, while DayOfWeek = Thursday did not contribute to the fraud risk. This claim is routed for Approve.",
+      "claim_details": {
+        "Month": "Dec",
+        "WeekOfMonth": 4,
+        "DayOfWeek": "Thursday",
+        "Make": "Toyota",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Monday",
+        "MonthClaimed": "Jan",
+        "WeekOfMonthClaimed": 4,
+        "Sex": "Male",
+        "MaritalStatus": "Married",
+        "Age": 30.0,
+        "Fault": "Third Party",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "more than 69000",
+        "Deductible": 400,
+        "DriverRating": 1,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "2 to 4",
+        "AgeOfVehicle": "7 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "none",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1995,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 0,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 6,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "SHAP issue is clear: DayOfWeek has a negative SHAP contribution, but the brief says it 'did not contribute to the fraud risk.'"
+      }
+    },
+    {
+      "claim_id": "TEST-09299",
+      "fraud_probability": 0.2456,
+      "fraud_probability_pct": 24.6,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.4282
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.2918
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.1249
+        },
+        {
+          "feature": "Age",
+          "value": 35.0,
+          "shap_contribution": 0.059
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "NumberOfSuppliments",
+          "value": "3 to 5",
+          "shap_contribution": -0.0347
+        }
+      ],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.25. The factors increased the fraud risk: BasePolicy = All Perils, Fault = Policy Holder, VehicleCategory = Sedan, Age = 35.0. The fact that NumberOfSuppliments is between 3 and 5 lowered the fraud risk. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "Jan",
+        "WeekOfMonth": 3,
+        "DayOfWeek": "Saturday",
+        "Make": "Mazda",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Wednesday",
+        "MonthClaimed": "Feb",
+        "WeekOfMonthClaimed": 1,
+        "Sex": "Male",
+        "MaritalStatus": "Married",
+        "Age": 35.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "20000 to 29000",
+        "Deductible": 400,
+        "DriverRating": 1,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "1",
+        "AgeOfVehicle": "7 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "3 to 5",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1995,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-09748",
+      "fraud_probability": 0.1245,
+      "fraud_probability_pct": 12.4,
+      "risk_tier": "Medium",
+      "tier_color": "amber",
+      "recommended_action": "Manual Review",
+      "increased_risk_factors": [
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.2758
+        },
+        {
+          "feature": "BasePolicy",
+          "value": "Collision",
+          "shap_contribution": 0.179
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.0595
+        },
+        {
+          "feature": "MonthClaimed",
+          "value": "Jun",
+          "shap_contribution": 0.0359
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "DayOfWeekClaimed",
+          "value": "Monday",
+          "shap_contribution": -0.0689
+        }
+      ],
+      "brief": "This claim is Medium risk, with a calibrated fraud probability of 0.12. The factors Fault = Policy Holder, BasePolicy = Collision, VehicleCategory = Sedan, and MonthClaimed = Jun. increased the fraud risk. The factor that lowered the fraud risk was DayOfWeekClaimed = Monday. This claim is routed for Manual Review.",
+      "claim_details": {
+        "Month": "Jun",
+        "WeekOfMonth": 3,
+        "DayOfWeek": "Monday",
+        "Make": "Honda",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Monday",
+        "MonthClaimed": "Jun",
+        "WeekOfMonthClaimed": 3,
+        "Sex": "Male",
+        "MaritalStatus": "Married",
+        "Age": 29.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "20000 to 29000",
+        "Deductible": 400,
+        "DriverRating": 3,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "more than 4",
+        "AgeOfVehicle": "6 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "none",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1995,
+        "BasePolicy": "Collision",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-09945",
+      "fraud_probability": 1.0,
+      "fraud_probability_pct": 100.0,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "Deductible",
+          "value": 500,
+          "shap_contribution": 0.8937
+        },
+        {
+          "feature": "AddressChange_Claim",
+          "value": "2 to 3 years",
+          "shap_contribution": 0.5199
+        },
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.2887
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.0735
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "MonthClaimed",
+          "value": "Nov",
+          "shap_contribution": -0.2071
+        }
+      ],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 1.00. The fraud risk was increased due to a deductible of 500, a change in address within 2 to 3 years, a base policy of All Perils, and the vehicle category being Sedan. The factor that lowered the fraud risk was MonthClaimed = Nov. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "Nov",
+        "WeekOfMonth": 1,
+        "DayOfWeek": "Saturday",
+        "Make": "Ford",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Wednesday",
+        "MonthClaimed": "Nov",
+        "WeekOfMonthClaimed": 2,
+        "Sex": "Male",
+        "MaritalStatus": "Married",
+        "Age": 30.0,
+        "Fault": "Third Party",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "40000 to 59000",
+        "Deductible": 500,
+        "DriverRating": 4,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "2 to 4",
+        "AgeOfVehicle": "7 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "1 to 2",
+        "AddressChange_Claim": "2 to 3 years",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1995,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-10447",
+      "fraud_probability": 0.1743,
+      "fraud_probability_pct": 17.4,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.2656
+        },
+        {
+          "feature": "BasePolicy",
+          "value": "Collision",
+          "shap_contribution": 0.218
+        },
+        {
+          "feature": "Month",
+          "value": "Mar",
+          "shap_contribution": 0.1409
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.0839
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "Deductible",
+          "value": 700,
+          "shap_contribution": -0.0785
+        }
+      ],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.17. The factors Fault = Policy Holder, BasePolicy = Collision, Month = Mar, and VehicleCategory = Sedan increased the fraud risk. The Deductible amount of 700 lowered the fraud risk. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "Mar",
+        "WeekOfMonth": 1,
+        "DayOfWeek": "Sunday",
+        "Make": "Saab",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Friday",
+        "MonthClaimed": "Mar",
+        "WeekOfMonthClaimed": 2,
+        "Sex": "Male",
+        "MaritalStatus": "Married",
+        "Age": 43.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "20000 to 29000",
+        "Deductible": 700,
+        "DriverRating": 2,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "1",
+        "AgeOfVehicle": "7 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "1 to 2",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1995,
+        "BasePolicy": "Collision",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-11914",
+      "fraud_probability": 0.1245,
+      "fraud_probability_pct": 12.4,
+      "risk_tier": "Medium",
+      "tier_color": "amber",
+      "recommended_action": "Manual Review",
+      "increased_risk_factors": [
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.2658
+        },
+        {
+          "feature": "BasePolicy",
+          "value": "Collision",
+          "shap_contribution": 0.1661
+        },
+        {
+          "feature": "Month",
+          "value": "May",
+          "shap_contribution": 0.0836
+        },
+        {
+          "feature": "MonthClaimed",
+          "value": "May",
+          "shap_contribution": 0.0753
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "NumberOfSuppliments",
+          "value": "more than 5",
+          "shap_contribution": -0.0905
+        }
+      ],
+      "brief": "This claim is Medium risk, with a calibrated fraud probability of 0.12. The factors Fault = Policy Holder, BasePolicy = Collision, Month = May, and MonthClaimed = May increased the fraud risk. The factor NumberOfSuppliments = more than 5 lowered the fraud risk. This claim is routed for Manual Review.",
+      "claim_details": {
+        "Month": "May",
+        "WeekOfMonth": 1,
+        "DayOfWeek": "Monday",
+        "Make": "Honda",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Tuesday",
+        "MonthClaimed": "May",
+        "WeekOfMonthClaimed": 1,
+        "Sex": "Male",
+        "MaritalStatus": "Married",
+        "Age": 39.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "20000 to 29000",
+        "Deductible": 400,
+        "DriverRating": 4,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "1",
+        "AgeOfVehicle": "7 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "more than 5",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1996,
+        "BasePolicy": "Collision",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-12437",
+      "fraud_probability": 0.1743,
+      "fraud_probability_pct": 17.4,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "Collision",
+          "shap_contribution": 0.357
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.264
+        },
+        {
+          "feature": "VehiclePrice",
+          "value": "more than 69000",
+          "shap_contribution": 0.0724
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "Year",
+          "value": 1996,
+          "shap_contribution": -0.164
+        },
+        {
+          "feature": "AgeOfVehicle",
+          "value": "new",
+          "shap_contribution": -0.0543
+        }
+      ],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.17. The fraud risk increased due to BasePolicy being Collision, Fault being Policy Holder, and VehiclePrice being more than 69000. The factors Year = 1996 and AgeOfVehicle = new lowered the fraud risk. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "Jan",
+        "WeekOfMonth": 4,
+        "DayOfWeek": "Sunday",
+        "Make": "Honda",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Thursday",
+        "MonthClaimed": "Apr",
+        "WeekOfMonthClaimed": 4,
+        "Sex": "Male",
+        "MaritalStatus": "Single",
+        "Age": null,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "more than 69000",
+        "Deductible": 400,
+        "DriverRating": 2,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "none",
+        "AgeOfVehicle": "new",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "none",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1996,
+        "BasePolicy": "Collision",
+        "Age_was_missing": true
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-13495",
+      "fraud_probability": 0.1743,
+      "fraud_probability_pct": 17.4,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.3361
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.2797
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.1042
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "WeekOfMonthClaimed",
+          "value": 5,
+          "shap_contribution": -0.1172
+        },
+        {
+          "feature": "Year",
+          "value": 1996,
+          "shap_contribution": -0.1018
+        }
+      ],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.17. The factors increased the fraud risk: BasePolicy = All Perils, Fault = Policy Holder, and VehicleCategory = Sedan. The factors WeekOfMonthClaimed = 5 and Year = 1996 lowered the fraud risk. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "May",
+        "WeekOfMonth": 4,
+        "DayOfWeek": "Thursday",
+        "Make": "Toyota",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Friday",
+        "MonthClaimed": "Jul",
+        "WeekOfMonthClaimed": 5,
+        "Sex": "Male",
+        "MaritalStatus": "Married",
+        "Age": 34.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "20000 to 29000",
+        "Deductible": 400,
+        "DriverRating": 3,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "none",
+        "AgeOfVehicle": "5 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "none",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1996,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-14010",
+      "fraud_probability": 0.1743,
+      "fraud_probability_pct": 17.4,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "BasePolicy",
+          "value": "All Perils",
+          "shap_contribution": 0.3342
+        },
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.2729
+        },
+        {
+          "feature": "MonthClaimed",
+          "value": "Aug",
+          "shap_contribution": 0.0858
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "Year",
+          "value": 1996,
+          "shap_contribution": -0.1948
+        },
+        {
+          "feature": "DayOfWeek",
+          "value": "Sunday",
+          "shap_contribution": -0.0804
+        }
+      ],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.17. The factors that increased the fraud risk for this claim were BasePolicy set to All Perils, Fault assigned to Policy Holder, and the claim was made in August. The factors Year = 1996 and DayOfWeek = Sunday lowered the fraud risk. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "Aug",
+        "WeekOfMonth": 2,
+        "DayOfWeek": "Sunday",
+        "Make": "Accura",
+        "AccidentArea": "Urban",
+        "DayOfWeekClaimed": "Wednesday",
+        "MonthClaimed": "Aug",
+        "WeekOfMonthClaimed": 3,
+        "Sex": "Male",
+        "MaritalStatus": "Married",
+        "Age": 32.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Utility",
+        "VehiclePrice": "more than 69000",
+        "Deductible": 400,
+        "DriverRating": 1,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "none",
+        "AgeOfVehicle": "6 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "none",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1996,
+        "BasePolicy": "All Perils",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    },
+    {
+      "claim_id": "TEST-14569",
+      "fraud_probability": 0.1743,
+      "fraud_probability_pct": 17.4,
+      "risk_tier": "High",
+      "tier_color": "red",
+      "recommended_action": "Fraud Investigation",
+      "increased_risk_factors": [
+        {
+          "feature": "Fault",
+          "value": "Policy Holder",
+          "shap_contribution": 0.2751
+        },
+        {
+          "feature": "BasePolicy",
+          "value": "Collision",
+          "shap_contribution": 0.2111
+        },
+        {
+          "feature": "VehicleCategory",
+          "value": "Sedan",
+          "shap_contribution": 0.0801
+        },
+        {
+          "feature": "MonthClaimed",
+          "value": "Oct",
+          "shap_contribution": 0.0563
+        }
+      ],
+      "reduced_risk_factors": [
+        {
+          "feature": "DayOfWeekClaimed",
+          "value": "Monday",
+          "shap_contribution": -0.046
+        }
+      ],
+      "brief": "This claim is High risk, with a calibrated fraud probability of 0.17. Fault being Policy Holder increased the fraud risk, as did BasePolicy being Collision and VehicleCategory being Sedan, with the claim being made in October. The factor that lowered the fraud risk was DayOfWeekClaimed = Monday. This claim is routed for Fraud Investigation.",
+      "claim_details": {
+        "Month": "Sep",
+        "WeekOfMonth": 2,
+        "DayOfWeek": "Wednesday",
+        "Make": "Toyota",
+        "AccidentArea": "Rural",
+        "DayOfWeekClaimed": "Monday",
+        "MonthClaimed": "Oct",
+        "WeekOfMonthClaimed": 2,
+        "Sex": "Male",
+        "MaritalStatus": "Married",
+        "Age": 36.0,
+        "Fault": "Policy Holder",
+        "VehicleCategory": "Sedan",
+        "VehiclePrice": "30000 to 39000",
+        "Deductible": 400,
+        "DriverRating": 3,
+        "Days_Policy_Accident": "more than 30",
+        "Days_Policy_Claim": "more than 30",
+        "PastNumberOfClaims": "2 to 4",
+        "AgeOfVehicle": "7 years",
+        "PoliceReportFiled": "No",
+        "WitnessPresent": "No",
+        "AgentType": "External",
+        "NumberOfSuppliments": "1 to 2",
+        "AddressChange_Claim": "no change",
+        "NumberOfCars": "1 vehicle",
+        "Year": 1996,
+        "BasePolicy": "Collision",
+        "Age_was_missing": false
+      },
+      "rubric": {
+        "factual_consistency": 2,
+        "faithfulness_to_shap": 2,
+        "actionability": 2,
+        "no_fabrication": 2,
+        "total": 8,
+        "max_total": 8,
+        "verdict": "PASS",
+        "reviewer_notes": "Clear match between brief and supplied claim/SHAP evidence; tier and action are consistent."
+      }
+    }
+  ]
+}
