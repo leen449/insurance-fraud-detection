@@ -71,7 +71,8 @@ insurance-fraud-detection/
 │
 ├── README.md
 ├── requirements.txt
-├── .gitignore                 # ignores data, models, AND prompts/
+├── .gitignore                 # ignores notebooks/prompts/, notebooks/results/, notebooks/rubric/
+│                               #   (incl. brief_scores.csv), __pycache__/, .ipynb_checkpoints/
 │
 ├── notebooks/                 # run order
 │   ├── 01_eda_and_statistics.ipynb
@@ -80,16 +81,23 @@ insurance-fraud-detection/
 │   ├── 04_modelling_and_selection.ipynb        # Experiment + Optuna → select on VALIDATION (no test set here)
 │   ├── 05_calibration_and_thresholds.ipynb     # calibrate + tune threshold/tiers on VALIDATION
 │   ├── 06_final_test_evaluation.ipynb          # LOCKED TEST SET — run once, after model+calibration+thresholds frozen
-│   ├── 07_shap_and_qwen.ipynb
-│   ├── 08_rubric_evaluation.ipynb              # scores GenAI briefs
-│   └── prompts/                # GIT-IGNORED — prompt text lives here, never committed
-│       └── brief_prompt.txt
+│   ├── 07_shap_explainability.ipynb
+│   ├── 08_qwen_briefs_and_rubric.ipynb         # runs locally (Ollama) — generates + scores GenAI briefs
+│   ├── shap_claim_briefs.json                  # GIT-IGNORED — Notebook 07's handoff, copied down from Drive
+│   ├── prompts/                                # GIT-IGNORED — prompt text, never committed
+│   │   └── brief_prompt.txt
+│   ├── results/                                # GIT-IGNORED — Notebook 08's local output
+│   │   └── generated_briefs.json
+│   └── rubric/                                 # GIT-IGNORED — human-scored rubric CSV, local only
+│       └── brief_scores.csv
 │
-├── genai.py                   # loads prompt from git-ignored file; Qwen call + safety rubric
-├── pipeline.py                # end-to-end runner
+├── app.py                     # Gradio demo — serves the team's precomputed, rubric-passed results
+├── model_pipeline.py          # loads demo_data.json; powers app.py's predictions/metrics
+├── demo_data.json             # 46 real SHAP+brief samples (Low/Medium/High) used by the live demo
 │
-├── app/                       # Gradio demo 
-│   └── app.py
+├── assets/                    # logos used by app.py's header
+│   ├── innovexa_header_mark.png
+│   └── innovexa_logo.png
 │
 ├── data/
 │   └── README.md              # dataset source + CC0 license

@@ -12,9 +12,11 @@ notebooks/results/
 notebooks/shap_claim_briefs.json
 notebooks/rubric/
 
-# NOTE: notebooks/rubric/brief_scores.csv is intentionally NOT ignored - it
-# holds human-entered rubric scores that Step 3 overwrites with blanks on
-# every re-run, so it isn't reproducible like the two artifacts above.
+# NOTE: the pattern above also ignores notebooks/rubric/brief_scores.csv, which
+# holds human-entered rubric scores that Step 3 overwrites with blanks on every
+# re-run - it isn't reproducible like the two artifacts above, but it's git-ignored
+# the same as the rest of this directory. Keep a backup copy outside notebooks/
+# if the scored version needs to survive a re-run or be shared separately.
 
 # Jupyter autosave checkpoints (relevant now that Notebook 08 runs locally,
 # not only in Colab).
