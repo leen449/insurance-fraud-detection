@@ -1,5 +1,7 @@
 # Insurance Claim Fraud Detection & Action Recommendation System
 
+**[Try the live demo →](https://huggingface.co/spaces/lele22e/insurance-fraud-detection-demo)**
+
 An explainable machine-learning system that screens vehicle-insurance claims for fraud, assigns each claim a calibrated risk tier, and generates a human-readable investigation brief with a recommended next action. Built as the capstone project for the Samsung Innovation Campus AI Course.
 
 > **Scope note.** This is a proof-of-concept validated on a historical benchmark dataset (1994–1996). It demonstrates a leakage-safe, calibration-focused methodology rather than a system ready for present-day deployment; real-world use would require retraining on current claims data.

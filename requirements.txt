@@ -27,3 +27,4 @@ jupyter>=1.0
 
 #Gradio demo
 gradio>=5.0
+spaces

@@ -24,8 +24,22 @@ from pathlib import Path
 
 import gradio as gr
 import pandas as pd
+import spaces
 
 import model_pipeline as mp
+
+
+@spaces.GPU
+def _zerogpu_placeholder() -> None:
+    """This app is entirely CPU-bound - precomputed results only, no live model calls
+    (see model_pipeline.py's module docstring). This function is never actually
+    invoked; it exists only because Hugging Face's free Gradio-SDK tier defaults to
+    ZeroGPU hardware, which requires at least one @spaces.GPU-decorated function to
+    be present at startup or the Space fails with 'No @spaces.GPU function detected'.
+    Safe to import/define outside a Spaces environment too - the `spaces` package
+    no-ops the decorator when SPACES_ZERO_GPU isn't set (e.g. running locally)."""
+    return None
+
 
 _LOGO_PATH = Path(__file__).parent / "assets" / "innovexa_header_mark.png"
 _LOGO_B64 = (
@@ -750,7 +764,27 @@ THEME = gr.themes.Base().set(
     button_secondary_text_color=TEXT_MUTED, button_secondary_text_color_dark=TEXT_MUTED,
 )
 
-with gr.Blocks(title="Innovexa — Claim Fraud Intelligence Console") as demo:
+# Forces Gradio's own dark theme resolution regardless of the visitor's OS/browser
+# light-vs-dark preference. This app's palette is intentionally dark-only (the
+# "deep-audit navy palette"), but CUSTOM_CSS above only overrides elements its own
+# selectors happen to match - Gradio's *native* components (Dataframe, Dropdown, the
+# built-in table/listbox chrome) render from Gradio's own theme CSS variables, which
+# Gradio resolves separately based on the `__theme` query param (light by default on
+# a light-preferring browser) - not from THEME.set() colors alone. Redirecting once,
+# on first load, to append `?__theme=dark` makes Gradio's SSR pre-render those native
+# components with the dark variant for every visitor, closing that gap.
+_FORCE_DARK_THEME_JS = """
+function () {
+    const url = new URL(window.location);
+    if (url.searchParams.get('__theme') !== 'dark') {
+        url.searchParams.set('__theme', 'dark');
+        window.location.href = url.href;
+    }
+}
+"""
+
+with gr.Blocks(title="Innovexa — Claim Fraud Intelligence Console", theme=THEME, css=CUSTOM_CSS) as demo:
+    demo.load(js=_FORCE_DARK_THEME_JS)
     gr.HTML(_header_html())
 
     with gr.Tab("Claim Analyzer"):
@@ -859,4 +893,4 @@ with gr.Blocks(title="Innovexa — Claim Fraud Intelligence Console") as demo:
     gr.HTML(_footer_html())
 
 if __name__ == "__main__":
-    demo.launch(theme=THEME, css=CUSTOM_CSS)
+    demo.launch()
