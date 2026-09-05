@@ -207,7 +207,6 @@ safe to ignore when setting up from scratch.
 ---
 ## References
 
-- Komsrimorakot, P., & Siriborvornratanakul, T. (2025). Enhancing fraud detection in imbalanced motor insurance datasets using CP-SMOTE and Random Under-Sampling. *Journal of Big Data*, 12:172.
-- Chawla, N. V., et al. (2002). SMOTE: Synthetic Minority Over-sampling Technique. *JAIR*, 16.
-- Lundberg, S. M., et al. (2020). From local explanations to global understanding with explainable AI for trees. *Nature Machine Intelligence*.
+- shivamb. Vehicle Claim Fraud Detection. Kaggle. https://www.kaggle.com/datasets/shivamb/vehicle-claim-fraud-detection
+-Komsrimorakot, P., & Siriborvornratanakul, T. (2025). Enhancing fraud detection in imbalanced motor insurance datasets using CP-SMOTE and Random Under-Sampling. Journal of Big Data, 12, 172.
 - S. Subudhi and S. Panigrahi, “Detection of automobile insurance fraud using feature selection and data mining techniques,” International Journal of Rough Sets and Data Analysis, vol. 5, no. 3, pp. 1–20, Jul. 2018, doi: 10.4018/IJRSDA.2018070101.
